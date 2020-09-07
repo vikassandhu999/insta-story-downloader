@@ -27,8 +27,8 @@ app.post('/',(async (req,res) => {
     res.send([{"status":"User hasn't any put stories"}]);
 }
   await page.waitForSelector('input[name="username"]');
-  await page.type('input[name="username"]', '9878358183');
-  await page.type('input[name="password"]', '#ihaveforgotmypassword');
+  await page.type('input[name="username"]', '<username>');
+  await page.type('input[name="password"]', '<password>');
   await page.click('button[type="submit"]');
   await page.waitFor(5000);
   await page.click('._7UhW9');
